@@ -1,18 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#AACFD0"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50sp"
+        android:background="@color/background_button_color"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="@color/black"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textSize="60sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/city_user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginVertical="30sp"
+        android:layout_marginTop="129dp"
+        android:background="#D1DDDD"
+        android:hint="@string/city_user_field"
+        android:minHeight="48dp"
+        android:paddingVertical="10sp"
+        android:textAlignment="center"
+        android:textColorHint="#610E0E0E"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch_1"
+        android:layout_marginHorizontal="100sp"
+        android:background="#79A8A9"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/main_btn"
+        android:textSize="16sp" />
+
+    <Switch
+        android:id="@+id/switch_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@id/user_agreement_checkbox_2"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginVertical="20sp"
+        android:height="48dp"
+        android:checked="true"
+        android:gravity="center"
+        android:text="@string/user_agreement_switch"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <CheckBox
+        android:id="@+id/user_agreement_checkbox_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city_user_field"
+        android:height="48dp"
+        android:minHeight="48dp"
+        android:text="@string/user_agreement_checkbox_1"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/user_agreement_checkbox_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_agreement_checkbox_1"
+        android:height="48dp"
+        android:minHeight="48dp"
+        android:text="@string/user_agreement_checkbox_2"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>
