@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">MyFirstApp</string>
+    <string name="main_btn">Найти тусу</string>
+    <string name="calendar_view_main_btn">Запланировать тусу</string>
+    <string name="logo">PVRTYTIME</string>
+    <string name="city_user_field">Введите город</string>
+    <string name="user_agreement_switch">Я соглашаюсь отлично провести время</string>
+    <string name="user_agreement_checkbox_1">Не барагозить</string>
+    <string name="user_agreement_checkbox_2">Найти путь домой</string>
+    <string name="user_agreement_toggleButton">Найти путь домой</string>
+    <string name="sign_up_logo">Регистрация</string>
+    <string name="sign_up_first_name">Введите имя</string>
+    <string name="sign_up_last_name">Введите фамилию</string>
+    <string name="sign_up_phone">Введите номер телефона</string>
+    <string name="sign_up_password">Придумайте пароль</string>
+    <string name="sign_up_password_repeat">Повторите пароль</string>
+    <string name="sign_up_main_btn">ЗАРЕГИСТРИРОВАТЬСЯ</string>
+
 </resources>
